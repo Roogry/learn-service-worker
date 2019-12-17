@@ -1,4 +1,5 @@
 const base_url = "https://api.football-data.org/v2/";
+const API_KEY = "1e68cbb6a65a45fdad2f63d6ea30ed4c";
 
 function status(response) {
 
@@ -24,7 +25,7 @@ function getTopTeams() {
 
     var request = new Request(base_url + "competitions/CL/standings?standingType=TOTAL", {
         headers: new Headers({
-            "X-Auth-Token": "1e68cbb6a65a45fdad2f63d6ea30ed4c"
+            "X-Auth-Token": API_KEY
         })
     });
 
@@ -51,7 +52,7 @@ function getMatches(statusMatch, jml) {
 
     var request = new Request(base_url + "competitions/CL/matches?status=" + statusMatch, {
         headers: new Headers({
-            "X-Auth-Token": "1e68cbb6a65a45fdad2f63d6ea30ed4c"
+            "X-Auth-Token": API_KEY
         })
     });
 
