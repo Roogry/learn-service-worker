@@ -1,7 +1,6 @@
 // REGISTER SERVICE WORKER
 if ("serviceWorker" in navigator) {
     reqServiceWorker();
-    reqNotif();
 } else {
     console.log("ServiceWorker belum didukung browser ini.");
 }
@@ -12,8 +11,9 @@ function reqServiceWorker() {
         .then(function (registration) {
             console.log("Pendaftaran ServiceWorker berhasil");
             return registration;
-        })
-        .catch(function (error) {
+        }).then(function () {
+            reqNotif();
+        }).catch(function (error) {
             console.log("Pendaftaran ServiceWorker gagal", error);
         });
 }
