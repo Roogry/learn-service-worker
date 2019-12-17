@@ -1,0 +1,20 @@
+{
+    "name": "The Champions",
+    "gcm_sender_id": "42671555596",
+    "short_name": "Champions",
+    "description": "The Champions is a platform to know upcoming and lastest match in Champions League.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#FFFFFF",
+    "theme_color": "#2F5BEA",
+    "icons": [{
+        "src": "icon192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }, {
+        "src": "icon512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }]
+}
